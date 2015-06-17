@@ -22,10 +22,18 @@ class FirstViewController: UIViewController {
         //TODO One
         label.text = "Hello, World"
         
+        
+        
+        
+        
         //TODO Two
         var greeting:String = "Hello, " + nameTextfield.text + ". You are " + ageTextfield.text + " years old."
         
         label.text = greeting
+        
+        
+        
+        
         
         //TODO Three
         var age:Int = ageTextfield.text.toInt()!
@@ -38,6 +46,9 @@ class FirstViewController: UIViewController {
             label.text = greeting + "You can drive. Vroommmm. "
         }
         
+        
+        
+        
         //TODO Four
         
         var drive = " You can only drive."
@@ -45,6 +56,9 @@ class FirstViewController: UIViewController {
         var driveAndVote = " You can drive and vote."
         
         var driveVoteAndDrink = " You can drive vote AND drink! But not at the same time ;)"
+        
+        
+        
         
         if (age >= 21){
             label.text = greeting + "You are legal to drink. Cheers!" + driveVoteAndDrink

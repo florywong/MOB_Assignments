@@ -12,9 +12,21 @@ class SecondViewController: UIViewController {
     
     
     
-    
+    var number:Int = 0
     
     @IBAction func addAction(sender: AnyObject) {
+        
+        var textfieldNumber = numberTextfield.text.toInt()!
+        
+        number = number + textfieldNumber
+        
+        numberLabel.text = String(number)
+        
+        
+        
+        
+        
+        /* This kinda worked too.
         
         var number:Int = numberTextfield.text.toInt()!
         
@@ -24,6 +36,7 @@ class SecondViewController: UIViewController {
         
         numberLabel.text = String(total)
         
+        */
         
         
     }
@@ -33,22 +46,3 @@ class SecondViewController: UIViewController {
     
 }
 
-
-
-
-
-
-
-/*
-var storedNumber:String = ""
-
-var convertStoredNumber:Int = storedNumber.toInt()
-
-var textfieldNumber:String = numberTextfield.text
-
-var convertTextfield:Int = textfieldNumber.toInt()!
-
-convertStoredNumber = convertStoredNumber + convertTextfield
-
-numberLabel.text = String(convertStoredNumber)
-*/
