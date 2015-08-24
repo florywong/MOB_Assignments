@@ -100,7 +100,7 @@ class StudentListTableViewController: UITableViewController {
         if let indexPath = self.tableView.indexPathForSelectedRow(){
             
             destinationVC.student = studentList[indexPath.row]
-
+            
         }
     }
 
